@@ -11,4 +11,8 @@ class Clinic extends Model
         'address',
         'description',
     ];
+    public function doctors()
+    {
+        return $this->belongsTo(Doctor::class);
+    }
 }
