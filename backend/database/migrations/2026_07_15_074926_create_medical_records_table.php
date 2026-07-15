@@ -17,6 +17,9 @@ return new class extends Migration {
             $table->foreignId('clinic_id')->constrained('clinics')->onDelete('cascade');
             $table->text('notes')->nullable();
             $table->text('allergies')->nullable();
+            $table->text('chronic_diseases')->nullable();
+            $table->text('current_medications')->nullable();
+            $table->text('status')->nullable();
 
             $table->timestamps();
         });
