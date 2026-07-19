@@ -20,7 +20,6 @@ return new class extends Migration {
             $table->text('chronic_diseases')->nullable();
             $table->text('current_medications')->nullable();
             $table->text('status')->nullable();
-
             $table->timestamps();
         });
     }
